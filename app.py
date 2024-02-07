@@ -31,7 +31,7 @@ def generate_gemini_content(transcript_text,prompt):
     response=model.generate_content(prompt+transcript_text)
     return response.text
 
-st.title("Youtube Transcript to detailed Notes Converter")
+st.title("YouTube Video Summarizer")
 youtube_link = st.text_input("Enter Your Video link: ")
 
 if youtube_link:
